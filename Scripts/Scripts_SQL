@@ -1,0 +1,40 @@
+-- Database: ETL
+
+-- DROP DATABASE IF EXISTS "ETL";
+
+CREATE DATABASE "ETL"
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'pt-BR'
+    LC_CTYPE = 'pt-BR'
+    LOCALE_PROVIDER = 'libc'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+
+CREATE TABLE empresas (
+    cnpj_basico VARCHAR(8) PRIMARY KEY,
+    razao_social TEXT,
+    natureza_juridica VARCHAR(8),
+    qualificacao_responsavel VARCHAR(6),
+    capital_social NUMERIC(20,2),
+    porte VARCHAR(4),
+	Localização VARCHAR(50)
+);
+
+-- esse codigo foi utlizado para inserir os dados 
+-- no banco de dados, o mesmo foi retirado do arquivo .xlsx
+cursor.execute("""
+            INSERT INTO empresas (cnpj_basico, razao_social, natureza_juridica, qualificacao_responsavel, capital_social, porte, localizacao)
+            VALUES (%s, %s, %s, %s, %s, %s, %s)
+        """, (
+            cnpj_basico,
+            razao_social,
+            natureza_juridica,
+            qualificacao_responsavel,
+            capital_social,
+            porte,
+            localizacao
+        ))

@@ -1,0 +1,7 @@
+📄 RELATÓRIO DE EXECUÇÃO DO ETL
+Data/Hora de início: 2025-05-08 10:38:01
+Data/Hora de término: 2025-05-08 10:43:50
+Tempo total de execução: 0:05:48.937625
+Total de registros processados: 1048576
+Total de registros inseridos com sucesso: 1048576
+Total de erros de inserção: 0
