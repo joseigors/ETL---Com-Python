@@ -2,6 +2,13 @@
 
 Este projeto realiza o processo de ETL (Extração, Transformação e Carga) de dados de um arquivo Excel para um banco de dados PostgreSQL. O script lê os dados de um arquivo `.xlsx`, realiza transformações necessárias e insere as informações na tabela de um banco de dados PostgreSQL.
 
+# Fonte dos dados
+https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj
+https://arquivos.receitafederal.gov.br/dados/cnpj/dados_abertos_cnpj/2023-05/
+
+# Observações:
+Foi excluida do projeto os dados por serem maiores do que o suportado pelo github
+
 # Justificativas
 
 Eu optei pelo uso do Python em vez do Apache devido à sua flexibilidade, facilidade de integração com bibliotecas como pandas e psycopg2 para manipulação de dados e conexão com bancos de dados. Além disso, o Python oferece uma linguagem simples de manter e adaptar, sendo ideal para processos de ETL mais diretos e ágeis. A conversão do arquivo Excel foi escolhida porque é um formato amplamente utilizado, e o Python, com a biblioteca openpyxl, permite uma leitura e manipulação eficientes de arquivos Excel, sem a necessidade de configurações complexas. Isso torna o processo mais ágil e com baixo custo operacional, facilitando a automação de todo o fluxo.
@@ -38,7 +45,7 @@ Eu optei pelo uso do Python em vez do Apache devido à sua flexibilidade, facili
 
 Primeiro, instale as dependências necessárias usando o `pip`:
 
-```bash
+``bash
 pip install pandas psycopg2 openpyx
 
 ### 2. Configurar o Banco de Dados PostgreSQL
