@@ -1,6 +1,6 @@
 # ETL - Processamento de Dados e Inserção no PostgreSQL
 
-Este projeto realiza o processo de ETL (Extração, Transformação e Carga) de dados de um arquivo Excel para um banco de dados PostgreSQL. O script lê os dados de um arquivo `.xlsx`, realiza transformações necessárias e insere as informações na tabela de um banco de dados PostgreSQL.
+Este projeto, parte de um processo seletivo, realiza o processo de ETL (Extração, Transformação e Carga) de dados de um arquivo Excel para um banco de dados PostgreSQL. O script lê os dados de um arquivo `.xlsx`, realiza transformações necessárias e insere as informações na tabela de um banco de dados PostgreSQL.
 
 # Fonte dos dados
 https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj
